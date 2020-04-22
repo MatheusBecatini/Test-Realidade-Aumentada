@@ -5,10 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+
     <script>
       // WebXR requires HTTPS, so the site doesn't work if someone manually enters
       // the URL and ends up using HTTP. To work around this, force redirect from
@@ -77,6 +74,22 @@
   </script>
   </head>  
   <body>
+    <!-- Inicio - Cabeçalho das páginas -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">XR Spinosaurus</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../">Voltar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Fim - Cabeçalho das páginas -->
 
     <a-scene>
       <a-assets timeout="30000">
