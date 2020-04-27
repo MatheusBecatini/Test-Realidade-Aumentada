@@ -13,6 +13,12 @@
             .setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
       });
      }
+
+     window.onload = () => {navigator.geolocation.getCurrentPosition((position) => {
+        document.querySelector('a-gltf-model')
+            .setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
+      });
+     }
     </script>
   </head>
 
@@ -22,11 +28,20 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
+      <!-- <a-text
         value="Aqui aparece a entidade"
         look-at="[gps-camera]"
         scale="5 5 5"
-      ></a-text>
+      ></a-text> -->
+
+      <a-assets>
+        <a-asset-item id="beer" src="../public/scenes/beer/scene.gltf"></a-asset-item>
+      </a-assets>
+      <a-gltf-model src="#beer"
+                    look-at="[gps-camera]"
+                    scale="2 2 2">
+      </a-gltf-model>
+
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
