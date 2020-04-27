@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentando um video com o Ar.js</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<script>
+// Para fazer o video iniciar e pausar quando o marcador é identificado ou para de ser identificado
+    AFRAME.registerComponent('vidhandler', {
+    init: function () {
+        this.toggle = false;
+        document.querySelector("#vid").pause(); //reference to the video
+    },
+    tick:function(){  
+        if(document.querySelector("a-marker").object3D.visible == true){
+            if(!this.toggle){
+                this.toggle = true;
+                document.querySelector("#vid").play();
+            }
+        }else{
+            this.toggle = false;
+            document.querySelector("#vid").pause();
+        }
+    }
+    });
+</script>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false;" embedded arjs >
+        <a-assets>
+            <video id="vid" src="../public/Video/video.mp4"></video>
+            <!-- Baixa qualidade do vídeo proposital, só para o repositório não ficar muito pesado -->
+        </a-assets>
+
+        <a-marker preset="hiro" vidhandler>
+        <a-video  width = "1" heigth="1" src="#vid"></a-video>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
