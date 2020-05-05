@@ -1,9 +1,8 @@
-
 window.onload = () => {
     let method = 'dynamic';
-
     // if you want to statically add places, de-comment following line:
     // method = 'static';
+    
     if (method === 'static') {
         let places = staticLoadPlaces();
         return renderPlaces(places);
@@ -32,10 +31,10 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: "Your place name",
+            name: "Casa CCDC",
             location: {
-                lat: 44.493271, // change here latitude if using static data
-                lng: 11.326040, // change here longitude if using static data
+                lat: -19.924033, // change here latitude if using static data
+                lng: -43.945370, // change here longitude if using static data
             }
         },
     ];
@@ -45,8 +44,8 @@ function staticLoadPlaces() {
 function dynamicLoadPlaces(position) {
     let params = {
         radius: 300,    // search places not farther than this value (in meters)
-        clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',
-        clientSecret: '',
+        clientId: '1QX3YGHK2D1PUT1O1G0EWMUZDUJ5BFNZVYBORLAB4H0R4IN3',
+        clientSecret: 'UK20LFM1EGZBZ25AIZPOWYR00EK4W4IOQS50ETX34WXB5KJN',
         version: '20300101',    // foursquare versioning, required but unuseful for this demo
     };
 
@@ -84,7 +83,7 @@ function renderPlaces(places) {
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         text.setAttribute('title', place.name);
-        text.setAttribute('href', 'http://www.example.com/');
+        text.setAttribute('href', 'http://www.pudim.com.br/');
         text.setAttribute('scale', '15 15 15');
 
         text.addEventListener('loaded', () => {
