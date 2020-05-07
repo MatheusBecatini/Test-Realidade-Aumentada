@@ -49,6 +49,8 @@ var setModel = function (model, entity) {
         entity.setAttribute('position', model.position);
     }
 
+    entity.setAttribute('look-at', '[gps-camera]');
+
     entity.setAttribute('gltf-model', model.url);
 
     const div = document.querySelector('.instructions');
