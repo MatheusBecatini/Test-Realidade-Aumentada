@@ -31,7 +31,7 @@ var models = [
         scale: '0.2 0.2 0.2',
         info: 'Articuno, Lv. 80, HP 100/100',
         rotation: '0 180 0',
-        position: '0 -2.5 0',
+        position: '0 -2.5 -1.5',
     },
 ];
 
