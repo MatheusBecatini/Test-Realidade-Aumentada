@@ -10,3 +10,5 @@ com este conteúdo.
 
 - [AR.js](https://ar-js-org.github.io/AR.js-Docs/)
 
+### Mais informações no: [Medium - Matheus Becatini](https://medium.com/@MatheusBecatini/uma-breve-apresenta%C3%A7%C3%A3o-realidade-aumentada-ar-js-7ea0b09c5457)
+
