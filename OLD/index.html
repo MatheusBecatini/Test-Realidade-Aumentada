@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Realidade Aumentada na WEB">
+  <meta name="author" content="Matheus Becatini">
+
+  <title>WEB AR - M.Becatini</title>
+
+  <link href="public/favicon.png" rel="icon">
+  <link href="public/favicon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://matheusbecatini.github.io/">Matheus Becatini</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aframe">Modelos 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#MarkerBased">AR com Marcador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ImageTraking">Rastreamento de Imagem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#LocationBased">AR Baseado em Localização</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="topbg py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2"><strong>Exemplos WEB AR</strong></h1>
+          <p class="lead mb-5 text-white-50">Apresento neste repositório alguns testes com bibliotecas de realidade aumentada. <br>Testes estes focados em estudar a tecnologia, estou aberto a qualquer sugestão.</p>
+          <a href="../"><button class="btn btn-primary btn-lg">Nova página disponível</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container" id="About">
+
+    <div class="row" >
+      <div class="col-md-8 mb-5">
+        <h2>Realidade Aumentada na WEB</h2>
+        <hr>
+        <p>Neste repositório vou apresentar alguns testes que estou fazendo utilizando 
+          </strong> Realidade Aumenta na WEB </strong>, tentarei deixar sempre que possível todo conteúdo 
+          interativo e funcionando, porém como trata-se de repositório de teste, poderá existir alguns problemas.
+          No mais, estou aberto a todo tipo de colaboração sobre este assunto, e espero também poder ajudar 
+          com este conteúdo.</p>
+          <p><strong>Leia mais no Medium</strong>: 
+            @matheusbecatini<br><br>
+          <a href="https://medium.com/@matheusbecatini"><img width="35%" src="./public/mediumIco2.png" alt=""></a>
+          </p>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h4>Entre em contato</h4>
+        <hr>
+        <address>
+          <strong>Matheus Becatini</strong>
+          <br>Github: MatheusBecatini
+          <br>Medium: @MatheusBecatini
+          <br>Linkedin: MatheusBecatini
+          <br>
+        </address>
+        <address>
+          Email:
+          <a href="mailto:matheusbecatinic@gmail.com">matheusbecatinic@gmail.com</a>
+        </address>
+      </div>
+    </div>
+      <!-- End Page Content -->
+
+    <!-- Marker Based -->
+    <h4 id="MarkerBased" class="text-dark">Realidade Aumentada baseada em <strong>Marcadores</strong></h4>
+    <div class="row">
+
+      <!-- Click Marker -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="./public/img/cards/umbreon.jpg" 
+          alt="Umbreon"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Exemplo de AR</h4>
+            <p class="card-text">Utiliza-se um mardador (Hiro) e a partir deste apresenta um objeto 3D. 
+              Lembra um QR Code. Interaja!</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/MarkerBased/EventsDOM/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maker based Edited - Video -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" 
+              src="https://cdn.dribbble.com/users/779970/screenshots/5058837/dribbble_shot_4x.png" 
+              alt="WIP"
+              height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Marker Based - Video</h4>
+            <p class="card-text">Reproduz um vídeo quando identifica um marcador Hiro. <strong>Apresentando instabilidade em dispositivos moveis</strong></p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/MarkerBased/ARvideo/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maker based Drone -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="./public/img/cards/busterDrone.jpg" 
+          alt="Buster Drone"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Que tal um objeto animado </h4>
+            <p class="card-text">Utiliza-se um mardador (Hiro) e a partir deste apresenta um objeto 3D. 
+              Lembra um QR Code.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/MarkerBased/Animation/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location based js -->
+    <h4 id="LocationBased" class="text-dark">Realidade Aumentada baseada em <strong>Localização</strong></h4>
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="./public/img/cards/magne.png"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Exemplo de AR</h4>
+            <p class="card-text">Adiciona marcadores à uma determinada latitude e longitude, assim quando 
+              a câmera é apontada para esta área, apresenta um marcador, mensagem ou imagem.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/LocationBased/withJS/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location based JS -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="./public/img/cards/mud.jpg"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Com Interação</h4>
+            <p class="card-text">Adiciona marcadores à uma determinada latitude e longitude, assim quando 
+              a câmera é apontada para esta área, apresenta um marcador, mensagem ou imagem. Interaja!</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/LocationBased/Click/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location based Dynamic -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="./public/img/cards/maps.webp"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Location based Dynamic</h4>
+            <p class="card-text">Apresenta em realidade aumentada locais próximos a você.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/LocationBased/Dynamic/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Image Traking T-rex -->
+    <h4 id="ImageTraking" class="text-dark">Realidade Aumentada com <strong>Rastreamento de Imagem</strong></h4>
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" 
+              src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex-image-big.jpeg" 
+              alt="T-Rex"
+              height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Image Tracking T-Rex Example</h4>
+            <p class="card-text">Usa uma imagem com marcadores (como se fosse um QR code), 
+                            assim ao detectar a imagem renderiza a imagem 3D em realidade aumentada.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/AR/ImageTraking/" class="btn btn-danger">Experimente!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A-Frame Examples Begin -->
+    <h4 id="aframe" class="text-dark">Modelos 3D criados com o A-Frame e Three.js</h4>
+    <div class="row">
+      <!-- A-frame Spinosaurus -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://aframe.io/images/blog/dino-ar.gif"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Spinosaurus A-Frame</h4>
+            <p class="card-text">Realidade virtual criada com o A-Frame.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/VR/Spinosaurus.html" class="btn btn-danger">Veja o resultado!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- A-Frame Example -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1579785522/content-items/003/646/161/FLOWALISTIK2-original-original.jpg?1579785522"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">A-Frame Testes</h4>
+            <p class="card-text">Exemplos de objetos 3D, renderizados, utilizando o A-Frame. Constantes mudanças...</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/VR/A-FrameExamples/" class="btn btn-danger">Veja o resultado!</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Three.js exemple -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://miro.medium.com/max/724/1*aDcnXab1QC_5KF8JUxDEYA.png"
+          alt="Em breve"
+          height="220rem">
+          <div class="card-body">
+            <h4 class="card-title">Three.js basic example</h4>
+            <p class="card-text">Como adicionar objetos animados a uma página HTML.</p>
+          </div>
+          <div class="card-footer" style="text-align: right;">
+            <a href="./Apps/VR/TheeJS.html/" class="btn btn-danger">Veja o resultado!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Box End -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-2 bg-dark">
+    <div class="container" >
+      <p class="m-0 text-center text-white" >Copyright &copy; <a style="color: white;" href="https://ar-js-org.github.io/AR.js-Docs/">AR.js</a>
+         & <a style="color: white;" href="https://MatheusBecatini.github.io">MatheusBecatini.github.io</a> - 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
